@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerija</title>
+    <style>
+        body{
+            margin: 0px;
+            height: 100%;
+          
+
+        }
+        img {
+            max-width: 100%;
+        }
+        .picture-grid{
+            
+           display: grid;
+           grid-template-columns: 160px 160px 160px 160px 160px; 
+           grid-auto-rows: minmax(100px, 150px);
+           gap: 16px;
+           height: 50vh;
+           font-family: 'Times New Roman', Times, serif;
+           font-size: 12px;
+           color: cornsilk;
+           text-align: center;
+       }
+       .grid-box {
+            background-color: rgb(82, 82, 167);
+            height: 160px;
+            width: 160px;
+            
+
+       }
+       p{
+           font-size: 19px;
+       }
+       #pictire-grid{
+           background-image: url(slika-2048w.jpg);
+       }
+       @media screen and (max-width: 1024px) {  
+                #picture-grid{
+                    background-image: url(slika-1024w.jpg);
+                    
+                }
+                p{
+           font-size: 18px;
+       }
+             }
+            @media screen and (max-width: 768px) {  
+                #picture-grid{
+                    background-image: url(slika-768w.jpg);
+                    
+                }
+                p{
+           font-size: 17px;
+       }
+             }
+    
+            @media screen and (max-width: 414px) {  
+                #picture-grid{
+                    background-image: url(slika:-414w;.jpg);
+                    
+                }
+                p{
+           font-size: 16px;
+       }
+             }
+             @media screen and (min: resolution 2dppx) and (max-width: 414px) {  
+                #picture-grid{
+                    background-image: url(slika:-414w@2.jpg);
+                    
+                }
+                p{
+           font-size: 16px;
+       }
+             }
+             @media screen and (min: resolution 3dppx) and (max-width: 414px) {  
+                #picture-grid{
+                    background-image: url(slika:-414w@3.jpg);
+                    
+                }
+                p{
+           font-size: 16px;
+       }
+             }
+
+    </style>
+</head>
+<body>
+    <div class="picture-grid">
+        <div class="grid-box"><img src="slika.jpg"/>Image Title</div>
+        <div class="grid-box"><img src="slika.jpg"/>Image Title</div>
+        <div class="grid-box"><img src="slika.jpg"/>Image Title</div>
+        <div class="grid-box"><img src="slika.jpg"/>Image Title</div>
+        <div class="grid-box"><img src="slika.jpg"/>Image Title</div>
+        <div class="grid-box"><img src="slika.jpg"/>Image Title</div>
+        <div class="grid-box"><img src="slika.jpg"/>Image Title</div>
+        <div class="grid-box"><img src="slika.jpg"/>Image Title</div>
+        <div class="grid-box"><img src="slika.jpg"/>Image Title</div>
+        <div class="grid-box"><img src="slika.jpg"/>Image Title</div>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vehicula quam eros, eget condimentum augue dictum sed. Vivamus blandit purus nibh, sit amet molestie felis sollicitudin id. Morbi tortor enim, varius eget gravida eu, dictum in velit. Suspendisse sit amet metus aliquet, viverra est id, efficitur diam. Integer laoreet nisi arcu, a venenatis nisl convallis a. Cras malesuada lobortis ex. Praesent vel massa a eros dignissim commodo. Ut justo purus, tincidunt ut ultrices ac, ultrices eget tellus. Cras sodales libero sed velit aliquet condimentum.</p>
+   
+</body>
+</html>
